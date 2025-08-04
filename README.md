@@ -32,10 +32,11 @@ Este manual describe los pasos para ejecutar las pruebas automatizadas desarroll
 ### ✅ Requisitos
 
 - Node.js y npm instalados.
+- npm install cypress --save-dev
 - Frontend ejecutándose localmente (`http://localhost:3000`).
 - Backend y base de datos en funcionamiento.
 - Carpeta `cypress/` con los scripts de prueba.
-
+- Para iniciar el Cypress usaremos el comando "npx cypress open".
 ### ▶️ Instalación de Dependencias
 
 ```bash

@@ -51,7 +51,9 @@ npm install cypress --save-dev
 Para instalar todas las dependencias del frontend (incluido Cypress si ya fue agregado), ejecuta en la raíz del proyecto:
 
 npm install
-**🚀 Iniciar Cypress**
+
+# **🚀 Iniciar Cypress**
+
 Para abrir la interfaz visual de Cypress y ver/ejecutar las pruebas, usa el siguiente comando:
 
 npx cypress open

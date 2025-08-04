@@ -59,9 +59,9 @@ Para abrir la interfaz visual de Cypress y ver/ejecutar las pruebas, usa el sigu
 npx cypress open
 
 Esto abrirá una ventana:
--Donde debera seleccionar "E2E Testing"  
--Ahi seleccionara el navegador de su preferencia
--En specs seleccionar los archivos cy.js para correrlos que se encuentran en cypress/e2e/.
+   - Donde debera seleccionar "E2E Testing"  
+   - Ahi seleccionara el navegador de su preferencia
+   - En specs seleccionar los archivos cy.js para correrlos que se encuentran en cypress/e2e/.
 
 ---
 

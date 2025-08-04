@@ -43,24 +43,18 @@ http://localhost:3000
 
 ✅ Instalar Cypress como dependencia de desarrollo:
 
-bash
-Copiar
-Editar
 npm install cypress --save-dev
+
 **▶️ Instalación de Dependencias del Proyecto**
+
 Para instalar todas las dependencias del frontend (incluido Cypress si ya fue agregado), ejecuta en la raíz del proyecto:
 
-bash
-Copiar
-Editar
 npm install
 **🚀 Iniciar Cypress**
 Para abrir la interfaz visual de Cypress y ver/ejecutar las pruebas, usa el siguiente comando:
 
-bash
-Copiar
-Editar
 npx cypress open
+
 Esto abrirá una ventana donde podrás seleccionar y correr los archivos .cy.js que se encuentran en cypress/e2e/.
 
 ---

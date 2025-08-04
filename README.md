@@ -27,21 +27,41 @@ Este manual describe los pasos para ejecutar las pruebas automatizadas desarroll
 
 ---
 
-## 🔷 2. Pruebas End-to-End con Cypress 
 
-### ✅ Requisitos
+**🔷 2. Pruebas End-to-End con Cypress**
+**✅ Requisitos Previos**
+Antes de ejecutar las pruebas automatizadas, asegúrate de cumplir con los siguientes requisitos:
 
-- Node.js y npm instalados.
-- npm install cypress --save-dev
-- Frontend ejecutándose localmente (`http://localhost:3000`).
-- Backend y base de datos en funcionamiento.
-- Carpeta `cypress/` con los scripts de prueba.
-- Para iniciar el Cypress usaremos el comando "npx cypress open".
-### ▶️ Instalación de Dependencias
+✅ Tener instalado Node.js y npm.
 
-```bash
+✅ Tener el frontend corriendo localmente en:
+http://localhost:3000
+
+✅ Tener el backend y la base de datos en funcionamiento.
+
+✅ Disponer de la carpeta cypress/ con los scripts de prueba creados.
+
+✅ Instalar Cypress como dependencia de desarrollo:
+
+bash
+Copiar
+Editar
+npm install cypress --save-dev
+**▶️ Instalación de Dependencias del Proyecto**
+Para instalar todas las dependencias del frontend (incluido Cypress si ya fue agregado), ejecuta en la raíz del proyecto:
+
+bash
+Copiar
+Editar
 npm install
-```
+**🚀 Iniciar Cypress**
+Para abrir la interfaz visual de Cypress y ver/ejecutar las pruebas, usa el siguiente comando:
+
+bash
+Copiar
+Editar
+npx cypress open
+Esto abrirá una ventana donde podrás seleccionar y correr los archivos .cy.js que se encuentran en cypress/e2e/.
 
 ---
 

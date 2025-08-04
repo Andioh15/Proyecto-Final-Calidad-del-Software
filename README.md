@@ -40,18 +40,29 @@ Este manual describe los pasos para ejecutar las pruebas automatizadas desarroll
 
 ```bash
 npm install
+```
 
-## 🔷 3. Katalon Studio
-✅ Requisitos
-Tener instalado Katalon Studio.
+---
 
-Descargar el proyecto desde /katalon.
+## 🔷 3. Pruebas UI + API con Katalon Studio
 
-▶️ Pasos de Ejecución
-Abrir Katalon y seleccionar "Open Project" > carpeta katalon/.
+### ✅ Requisitos
 
-En la pestaña Test Cases, abrir y revisar cada script:
+- Tener instalado [Katalon Studio](https://www.katalon.com/).
+- Descargar el proyecto desde la carpeta `katalon/`.
+- Tener backend y base de datos activos.
 
-Registro, login, validaciones de formulario, pruebas de API.
+### ▶️ Pasos de Ejecución
 
-Ir a la pestaña Test Suites y ejecutar una suite completa.
+1. Abrir Katalon Studio.
+2. Seleccionar "Open Project" y abrir la carpeta `katalon/`.
+3. Navegar a la pestaña **Test Cases** y abrir los scripts disponibles:
+   - Registro de usuario
+   - Inicio de sesión (login)
+   - Validación de formularios
+   - Pruebas de API REST
+4. Ir a la pestaña **Test Suites**.
+5. Ejecutar la suite de pruebas completa (botón derecho → Run).
+6. Verificar los resultados desde:
+   - Pestaña **Log Viewer**
+   - Carpeta de reportes: `Reports/`

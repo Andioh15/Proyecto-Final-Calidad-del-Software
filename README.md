@@ -4,7 +4,7 @@ Este manual describe los pasos para ejecutar las pruebas automatizadas desarroll
 
 ---
 
-## 🔶 1. Pruebas de API con Postman
+## 🔶 1. Pruebas de API con Postmandad
 
 ### ✅ Requisitos
 
@@ -28,7 +28,8 @@ Este manual describe los pasos para ejecutar las pruebas automatizadas desarroll
 ---
 
 
-**🔷 2. Pruebas End-to-End con Cypress**
+## 🔷 2. Pruebas End-to-End con Cypress
+
 **✅ Requisitos Previos**
 Antes de ejecutar las pruebas automatizadas, asegúrate de cumplir con los siguientes requisitos:
 

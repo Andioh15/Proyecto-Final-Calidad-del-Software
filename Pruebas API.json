@@ -1,0 +1,452 @@
+{
+	"id": "7b5cee1a-533a-43d9-8757-201c92a11193",
+	"name": "Pruebas API",
+	"timestamp": "2025-08-03T02:39:57.861Z",
+	"collection_id": "45969691-41b65f4c-5d70-4808-96f4-e021d23b2314",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 23,
+	"delay": "1000",
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-08-03T02:39:46.373Z",
+	"totalFail": 7,
+	"results": [
+		{
+			"id": "cfe029b1-6806-488a-9455-419725e8392e",
+			"name": "1. Crear usuario",
+			"url": "http://localhost:8080/api/usuarios",
+			"time": 40,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 200 or 201": false,
+				"Response time is under 1000ms": true,
+				"La respuesta contiene campos esperados": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200 or 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is under 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta contiene campos esperados": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				40
+			],
+			"allTests": [
+				{
+					"Status code is 200 or 201": false,
+					"Response time is under 1000ms": true,
+					"La respuesta contiene campos esperados": false
+				}
+			]
+		},
+		{
+			"id": "b542c533-9f9b-4a18-9b4c-efc17af810b9",
+			"name": "2. Obtener usuario por correo",
+			"url": "http://localhost:8080/api/usuarios/Fernando@email.com",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200 or 201": true,
+				"Response time is under 1000ms": true,
+				"La respuesta contiene campos esperados": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 or 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is under 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta contiene campos esperados": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 200 or 201": true,
+					"Response time is under 1000ms": true,
+					"La respuesta contiene campos esperados": true
+				}
+			]
+		},
+		{
+			"id": "09e8e207-4570-45d2-ab49-da03fd76ca32",
+			"name": "3. Crear proyecto",
+			"url": "http://localhost:8080/api/proyectos",
+			"time": 5,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200 or 201": true,
+				"Response time is under 1000ms": true,
+				"La respuesta contiene campos esperados": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 or 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is under 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta contiene campos esperados": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 200 or 201": true,
+					"Response time is under 1000ms": true,
+					"La respuesta contiene campos esperados": true
+				}
+			]
+		},
+		{
+			"id": "f9b54209-9492-4d0d-99d9-864b2a7087d6",
+			"name": "4. Obtener proyectos por usuario",
+			"url": "http://localhost:8080/api/proyectos/27",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200 or 201": true,
+				"Response time is under 1000ms": true,
+				"La respuesta contiene campos esperados": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 or 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is under 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta contiene campos esperados": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200 or 201": true,
+					"Response time is under 1000ms": true,
+					"La respuesta contiene campos esperados": true
+				}
+			]
+		},
+		{
+			"id": "9975a65d-1bd8-4978-aa99-c9413378f6f8",
+			"name": "5. Crear requerimiento",
+			"url": "http://localhost:8080/api/requerimientos",
+			"time": 4,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200 or 201": true,
+				"Response time is under 1000ms": true,
+				"La respuesta contiene campos esperados": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 or 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is under 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta contiene campos esperados": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 200 or 201": true,
+					"Response time is under 1000ms": true,
+					"La respuesta contiene campos esperados": true
+				}
+			]
+		},
+		{
+			"id": "abab363f-bba2-458d-ab75-7f6efcdaa52f",
+			"name": "6. Obtener requerimientos por proyecto",
+			"url": "http://localhost:8080/api/requerimientos/57",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200 or 201": true,
+				"Response time is under 1000ms": true,
+				"La respuesta contiene campos esperados": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 or 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is under 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta contiene campos esperados": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200 or 201": true,
+					"Response time is under 1000ms": true,
+					"La respuesta contiene campos esperados": true
+				}
+			]
+		},
+		{
+			"id": "c53c89c2-f6dc-4600-be12-305f955047e8",
+			"name": "7. Actualizar requerimiento",
+			"url": "http://localhost:8080/api/requerimientos/22",
+			"time": 3,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200 or 201": false,
+				"Response time is under 1000ms": true,
+				"La respuesta contiene campos esperados": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200 or 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is under 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta contiene campos esperados": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200 or 201": false,
+					"Response time is under 1000ms": true,
+					"La respuesta contiene campos esperados": false
+				}
+			]
+		},
+		{
+			"id": "77d2011e-30da-4f0b-812b-8fae8bf7d0bf",
+			"name": "8. Eliminar requerimiento",
+			"url": "http://localhost:8080/api/requerimientos/23",
+			"time": 3,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200 or 201": false,
+				"Response time is under 1000ms": true,
+				"La respuesta contiene campos esperados": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200 or 201": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is under 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta contiene campos esperados": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status code is 200 or 201": false,
+					"Response time is under 1000ms": true,
+					"La respuesta contiene campos esperados": false
+				}
+			]
+		},
+		{
+			"id": "5bafde9f-334a-4983-8ffa-63cf2f4efd01",
+			"name": "9. Crear historia de usuario",
+			"url": "http://localhost:8080/api/historias",
+			"time": 5,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 200 or 201": true,
+				"Response time is under 1000ms": true,
+				"La respuesta contiene campos esperados": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200 or 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is under 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta contiene campos esperados": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status code is 200 or 201": true,
+					"Response time is under 1000ms": true,
+					"La respuesta contiene campos esperados": true
+				}
+			]
+		},
+		{
+			"id": "ee8a8813-22a2-403b-814b-a58838d5b792",
+			"name": "10. Obtener historias por proyecto",
+			"url": "http://localhost:8080/api/historias/proyecto/1",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200 or 201": true,
+				"Response time is under 1000ms": true,
+				"La respuesta contiene campos esperados": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200 or 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is under 1000ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"La respuesta contiene campos esperados": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status code is 200 or 201": true,
+					"Response time is under 1000ms": true,
+					"La respuesta contiene campos esperados": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 75,
+	"collection": {
+		"requests": [
+			{
+				"id": "cfe029b1-6806-488a-9455-419725e8392e",
+				"method": "POST"
+			},
+			{
+				"id": "b542c533-9f9b-4a18-9b4c-efc17af810b9",
+				"method": "GET"
+			},
+			{
+				"id": "09e8e207-4570-45d2-ab49-da03fd76ca32",
+				"method": "POST"
+			},
+			{
+				"id": "f9b54209-9492-4d0d-99d9-864b2a7087d6",
+				"method": "GET"
+			},
+			{
+				"id": "9975a65d-1bd8-4978-aa99-c9413378f6f8",
+				"method": "POST"
+			},
+			{
+				"id": "abab363f-bba2-458d-ab75-7f6efcdaa52f",
+				"method": "GET"
+			},
+			{
+				"id": "c53c89c2-f6dc-4600-be12-305f955047e8",
+				"method": "PATCH"
+			},
+			{
+				"id": "77d2011e-30da-4f0b-812b-8fae8bf7d0bf",
+				"method": "DELETE"
+			},
+			{
+				"id": "5bafde9f-334a-4983-8ffa-63cf2f4efd01",
+				"method": "POST"
+			},
+			{
+				"id": "ee8a8813-22a2-403b-814b-a58838d5b792",
+				"method": "GET"
+			}
+		]
+	}
+}
